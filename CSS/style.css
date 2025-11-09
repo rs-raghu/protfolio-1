@@ -16,6 +16,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -41,7 +45,7 @@ nav {
     bottom: 2%;
     width: 100%;
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     z-index: 1;
     visibility: hidden;
 }
@@ -72,7 +76,7 @@ nav ul li a {
 
 }
 
-#home h2 {
+h2 {
     color: #FFB800;
     font-size: 3em;
 }
@@ -126,7 +130,125 @@ nav ul li a {
     font-size: 1em;
 }
 
-#aboutme,#experience,#skills,#projects,#certificates,#contactme {
+#aboutme,
+#experience,
+#skills,
+#projects,
+#certificates,
+#contactme {
+    margin-top: 18%;
     margin-left: 6%;
+    margin-right: 6%;
+}
+
+#aboutme p {
+    font-weight: bold;
+    width: 50%;
+    font-size: 2em;
+    margin-top: 5%;
+    color: #FFF;
+}
+
+#experience ul {
+    width: 60%;
+}
+
+.exp h3 {
+    color: #FFF;
+    font-size: 2em;
+}
+
+.exp strong,
+.exp strong a {
+    color: #FFB800;
+    font-size: 1.2em;
+}
+
+.duration {
+    margin-right: 20rem;
+    margin-top: 0.65rem;
+    font-weight: bold;
+    color: #FFF;
+    font-size: 1.2rem;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 3rem 0rem 1rem 0rem;
+}
+
+.exp ul {
+    color: #FFF;
+    font-size: 1.3rem;
+    font-weight: 500;
+    list-style-type: disc;
+    padding-left: 2rem;
+    width: 150%;
+}
+
+.exp ul li {
+    margin-bottom: 1rem;
+}
+
+.certificate {
+    margin-top: 3rem;
+    padding: 0.5rem 0.5rem;
+    background-color: #FFB800;
+    border-radius: 999rem;
+    font-weight: 600;
+}
+
+.skill-grid {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.skill-category {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.skill-category ul {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-auto-flow: column;
+}
+
+.skill-category:nth-child(1) {
+    border-bottom-right-radius: 999px;
+
+}
+
+.skill-category:nth-child(2) {
+    border-bottom-left-radius: 999px;
+}
+
+.skill-category:nth-child(3) {
+    border-top-right-radius: 999px;
+}
+
+.skill-category:nth-child(4) {
+    border-top-left-radius: 999px;
+}
+
+.skill-category h3 {
+    color: #FFB800;
+    font-size: 2rem;
+    margin: 1.3rem;
+}
+
+.skill-category ul li {
+    color: #FFF;
+    font-size: 1.2rem;
+    margin: 1.5rem 1.8rem;
+    font-weight: bold;
+}
+
+.skill-category:nth-child(2),
+.skill-category:nth-child(4) {
+    text-align: right;
 }
 

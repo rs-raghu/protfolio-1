@@ -31,14 +31,14 @@
     </nav>
     <main>
         <section id="home">
-            <h2 >AIML Engineer | Developer</h2>
+            <h2>AIML Engineer | Developer</h2>
             <h1><strong>R Raghunesh</strong></h1>
             <p>Vellore Institute of Technology</p>
             <img src="../ASSETS/IMG_20250915_182214-removebg-preview.png" alt="myself" id="myself">
 
             <ul id="contact-list1">
                 <li>
-                    <img src="../ASSETS/linkedin.png" alt="linkedin-logo" >
+                    <img src="../ASSETS/linkedin.png" alt="linkedin-logo">
                     <a href="https://www.linkedin.com/in/rsraghu2528" target="_blank">Linkedin - rsraghu2528</a>
                 </li>
                 <li>
@@ -49,12 +49,14 @@
         </section>
 
         <section id="aboutme">
-            <h2>About Me</h2>
+            <h2><strong>About Me</strong></h2>
             <p>
                 A creative software developer and computer science student bridging the gap between human-centered
-                design and artificial intelligence. I build responsive web applications with React and JavaScript while
-                also developing and training machine learning models with Python, aiming to create smarter and more
-                engaging technology. Beyond the code, I am also a content creator with a keen eye for graphic design and
+                design and artificial intelligence. I build responsive web applications while
+                also developing and training machine learning models, aiming to create smarter and more
+                engaging technology.
+            </p>
+            <p>Beyond the code, I am also a content creator with a keen eye for graphic design and
                 a passion for video editing. I believe this blend of technical logic and creative storytelling is the
                 key to building products that don't just work, but also captivate and connect with users.
             </p>
@@ -63,10 +65,14 @@
         <section id="experience">
             <h2>Experience</h2>
             <ul>
-                <li>
-                    <h3>Data Analyst Intern</h3>
-                    <p><strong><a href="https://learnbasics.fun">Learn Basics</a></strong></p>
-                    <p>May 2025 - June 2025</p>
+                <li class="exp">
+                    <div class="exp-header">
+                        <div class="exp-info">
+                            <h3>Data Analyst Intern</h3>
+                            <p><strong><a href="https://learnbasics.fun" target="_blank">Learn Basics</a></strong></p>
+                        </div>
+                        <p class="duration">May 2025 - June 2025</p>
+                    </div>
                     <ul>
                         <li>Gained in-depth experience in real-time database management, focusing on optimizing
                             PostgreSQL queries to improve performance.</li>
@@ -75,88 +81,100 @@
                         <li>Automated the report generation workflow by integrating LaTeX and Overleaf, ensuring
                             efficient and consistent reporting.</li>
                     </ul>
-                    <a href="">View Certificate</a>
+                    <a href="" class="certificate">View Certificate</a>
                 </li>
 
-                <li>
-                    <h3>Video Editor</h3>
-                    <p><strong><a href="https://aptifyr-website.vercel.app">Aptifyr</a></strong></p>
-                    <p>October 2024 - November 2024</p>
+                <li class="exp">
+                    <div class="exp-header">
+                        <div class="exp-info">
+                            <h3>Video Editor</h3>
+                            <p>
+                                <strong><a href="https://aptifyr-website.vercel.app"
+                                        target="_blank">Aptifyr</a></strong>
+                            </p>
+                        </div>
+                        <p class="duration">October 2024 - November 2024</p>
+                    </div>
                     <ul>
                         <li>Executed end-to-end video production, skillfully editing content in DaVinci Resolve and
                             CapCut while integrating AI-powered tools for voice and image generation.</li>
                         <li>Demonstrated strong time management and efficiency by systematically transforming raw
                             content into polished, engaging videos, consistently meeting all project deadlines.</li>
                     </ul>
-                    <a href="">View Certificate</a>
+                    <a href="" class="certificate">View Certificate</a>
                 </li>
 
-                <li>
-                    <h3>Outreach head</h3>
-                    <p><strong>Nature Club, VIT</strong></p>
-                    <p>January 2025 - December 2025</p>
+                <li class="exp">
+                    <div class="exp-header">
+                        <div class="exp-info">
+                            <h3>Outreach head</h3>
+                            <p><strong>Nature Club, VIT</strong></p>
+                        </div>
+                        <p class="duration">January 2025 - December 2025</p>
+                    </div>
                     <ul>
                         <li>Directed all club outreach strategies, developing targeted environmental programs for local
                             schools and the wider community.</li>
                         <li>Demonstrated strong people management and event coordination skills by leading a major
                             collaborative event with BCF-INDIA.</li>
                     </ul>
-                    <a href="">View Certificate</a>
+                    <a href="" class="certificate">View Certificate</a>
                 </li>
             </ul>
         </section>
         <section id="skills">
             <h2>Skills</h2>
-            <ul>
-                <li>
-                    <div>
-                        <h3>Programming Languages</h3>
-                        <ul>
-                            <li>Python</li>
-                            <li>Java</li>
-                            <li>Javascript</li>
-                            <li>C++</li>
-                            <li>SQL</li>
-                            <li>HTML</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h3>Frameworks</h3>
-                        <ul>
-                            <li>React</li>
-                            <li>NodeJS</li>
-                            <li>ExpressJS</li>
-                            <li>Tailwind CSS</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h3>Libraries</h3>
-                        <ul>
-                            <li>Pandas</li>
-                            <li>Numpy</li>
-                            <li>Matplotlib</li>
-                            <li>Scikit-Learn</li>
-                            <li>TensorFlow</li>
-                            <li>Pytorch</li>
-                        </ul>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <h3>Databases</h3>
-                        <ul>
-                            <li>PostgreSQL</li>
-                            <li>MySQL</li>
-                            <li>MongoDB</li>
-                        </ul>
-                    </div>
-                </li>
-            </ul>
+            <div class="skill-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>Javascript</li>
+                        <li>C++</li>
+                        <li>SQL</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Frameworks</h3>
+                    <ul>
+                        <li>React</li>
+                        <li>NodeJS</li>
+                        <li>ExpressJS</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Libraries</h3>
+                    <ul>
+                        <li>Pandas</li>
+                        <li>Numpy</li>
+                        <li>Matplotlib</li>
+                        <li>Scikit-Learn</li>
+                        <li>TensorFlow</li>
+                        <li>Pytorch</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>MySQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+
+                <div class="center-circle">
+                    <!-- You can later put animation or logo here -->
+                    <div class="circle-animation"></div>
+                </div>
+            </div>
         </section>
+
         <section id="projects">
             <h2>Projects</h2>
             <ul>
