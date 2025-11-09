@@ -136,7 +136,7 @@ h2 {
 #projects,
 #certificates,
 #contactme {
-    margin-top: 18%;
+    margin-top: 10%;
     margin-left: 6%;
     margin-right: 6%;
 }
@@ -209,10 +209,13 @@ h2 {
 
 .skill-category {
     background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
 }
 
 .skill-category ul {
     display: grid;
+    width: 60%;
     grid-template-rows: repeat(3, auto);
     grid-auto-flow: column;
 }
@@ -249,6 +252,14 @@ h2 {
 
 .skill-category:nth-child(2),
 .skill-category:nth-child(4) {
-    text-align: right;
+   text-align: right;
 }
+
+.skill-category:nth-child(2) ul,
+.skill-category:nth-child(4) ul{
+   align-self: flex-end;
+}
+
+
+
 
