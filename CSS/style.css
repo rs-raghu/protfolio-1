@@ -1,64 +1,132 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     background-image: url(../ASSETS/background.png);
-    background-size: 100%;
+    background-size: cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     font-family: 'Albert Sans', sans-serif;
 }
 
-header{
+a {
+    text-decoration: none;
+}
+
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 3% 10%;
+    margin: 3% 6%;
 }
 
-header #work{
+header #work {
     color: #FFF;
 }
 
-header #resume{
+header #resume {
     background-color: #FFB800;
     border-radius: 999rem;
-    border: 500 rem;
     padding: 1% 1.5%;
+    color: #000;
+    position: fixed;
+    right: 5.5%;
 }
 
-nav ul{
+nav {
+    position: fixed;
+    bottom: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center ;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.nav-scrolled {
+    top: 2%;
+    bottom: auto;
+}
+
+nav ul {
     display: flex;
     justify-content: space-between;
+    width: 50%;
     list-style: none;
-    margin: 0 25%;
-    position: sticky;
-    background-color: rgba(0,0,0,0.2);
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 1rem 2rem;
     border-radius: 999rem;
 }
 
-nav ul li a{
+nav ul li a {
     color: #FFF;
     font-size: larger;
     font-weight: bolder;
-    text-decoration-line: none;
 }
 
-#home{
-    margin: 8% 10%;
+#home {
+    margin: 10% 6%;
+
 }
 
-#home h2{
+#home h2 {
     color: #FFB800;
-    font-size: 2.2em;
+    font-size: 3em;
 }
 
-#home h1{
+#home h1 {
     color: #FFF;
-    font-size: 7em;
+    font-size: 8em;
 }
 
+#home p {
+    color: #FFF;
+    font-size: 3em;
+    padding-top: 0.3em;
+}
+
+#myself {
+    position: fixed;
+    height: 100%;
+    bottom: 0;
+    right: 15%;
+    z-index: 0;
+    visibility: hidden;
+}
+
+#contact-list1 {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-top: 3%;
+}
+
+#contact-list1 li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+}
+
+#contact-list1 li img {
+    align-self: center;
+    display: inline;
+    height: 3rem;
+    padding: 0.5% 0.5%;
+    margin-right: 0.9rem;
+    background-color: #FFB800;
+    border-radius: 50%;
+}
+
+#contact-list1 li a {
+    color: #FFF;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#aboutme,#experience,#skills,#projects,#certificates,#contactme {
+    margin-left: 6%;
+}
 
