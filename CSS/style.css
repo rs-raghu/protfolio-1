@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+#home{
+    background-image: url(../ASSETS/background.png);
+    
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+header{
+    display: flexbox;
+    justify-content: space-between;
+}
+
