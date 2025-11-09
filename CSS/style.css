@@ -2,18 +2,63 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
 }
 
-#home{
+body{
     background-image: url(../ASSETS/background.png);
-    
     background-size: 100%;
     background-repeat: no-repeat;
+    font-family: 'Albert Sans', sans-serif;
 }
 
 header{
-    display: flexbox;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 3% 10%;
 }
+
+header #work{
+    color: #FFF;
+}
+
+header #resume{
+    background-color: #FFB800;
+    border-radius: 999rem;
+    border: 500 rem;
+    padding: 1% 1.5%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 25%;
+    position: sticky;
+    background-color: rgba(0,0,0,0.2);
+    padding: 1rem 2rem;
+    border-radius: 999rem;
+}
+
+nav ul li a{
+    color: #FFF;
+    font-size: larger;
+    font-weight: bolder;
+    text-decoration-line: none;
+}
+
+#home{
+    margin: 8% 10%;
+}
+
+#home h2{
+    color: #FFB800;
+    font-size: 2.2em;
+}
+
+#home h1{
+    color: #FFF;
+    font-size: 7em;
+}
+
 
