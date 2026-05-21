@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RS Raghu portfolio — glassmorphism project desktop." />
+  <title>RS Raghu | Portfolio</title>
+
+  <!-- Modern aesthetic font. Works online. Fallbacks are defined in CSS. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="CSS/style.css" />
+  <script src="JS/app.js" defer></script>
+</head>
+<body>
+  <main class="portfolio-shell" aria-label="RS Raghu portfolio">
+    <div class="background" data-background aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <aside class="identity-widget glass" aria-label="Portfolio identity">
+      <strong>R Raghunesh</strong>
+      <span>AI developer</span>
+    </aside>
+
+    <section class="project-space" aria-label="Projects" data-project-space></section>
+
+    <nav class="bottom-dock glass" aria-label="Portfolio links">
+      <button type="button" data-open-panel="about" data-dock-item="about">About me</button>
+      <button type="button" data-open-panel="notes" data-dock-item="notes">Notes</button>
+      <span class="dock-divider" aria-hidden="true">|</span>
+      <a data-message-link data-dock-item="message" href="mailto:raghuneshram@gmail.com">Message me</a>
+      <a data-github-link data-dock-item="github" href="https://github.com/rsraghu2528" target="_blank" rel="noreferrer">GitHub</a>
+      <a data-leetcode-link data-dock-item="leetcode" href="#" target="_blank" rel="noreferrer">LeetCode</a>
+      <a data-resume-link data-dock-item="resume" href="assets/resume/RS_Raghu_Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+    </nav>
+
+    <section class="panel-layer" aria-live="polite">
+      <article class="glass panel" data-panel="project" aria-label="Project details">
+        <button class="panel-close" type="button" data-close-panel aria-label="Close panel">×</button>
+        <div class="panel-kicker" data-project-category></div>
+        <div class="panel-heading-row">
+          <div class="panel-project-icon" data-project-icon></div>
+          <div>
+            <h1 data-project-title></h1>
+            <p data-project-subtitle></p>
+          </div>
+        </div>
+        <p class="panel-description" data-project-description></p>
+        <div class="tag-row" data-project-tags></div>
+        <div class="panel-actions" data-project-actions></div>
+      </article>
+
+      <article class="glass panel text-panel" data-panel="about" aria-label="About me">
+        <button class="panel-close" type="button" data-close-panel aria-label="Close panel">×</button>
+        <p class="panel-kicker">About me</p>
+        <h1>RS Raghu</h1>
+        <p>I am a student developer focused on full-stack web development, machine learning, DSA, and practical product-building. I like building useful tools that improve focus, learning, and real-world decision-making.</p>
+        <div class="info-grid">
+          <span>Focus</span><strong>Web • ML • DSA • Product Projects</strong>
+          <span>Email</span><strong><a href="mailto:raghuneshram@gmail.com">raghuneshram@gmail.com</a></strong>
+          <span>Style</span><strong>Hands-on learning through projects</strong>
+        </div>
+      </article>
+
+      <article class="glass panel text-panel" data-panel="notes" aria-label="Notes and experience">
+        <button class="panel-close" type="button" data-close-panel aria-label="Close panel">×</button>
+        <p class="panel-kicker">Notes / Experience / About</p>
+        <h1>What I am building</h1>
+        <div class="notes-list">
+          <section>
+            <h2>Focus Management System</h2>
+            <p>A cross-device distraction blocking system concept with AI-based access reasoning.</p>
+          </section>
+          <section>
+            <h2>Machine Learning Practice</h2>
+            <p>Learning ML by building projects first, including image classification and preprocessing workflows.</p>
+          </section>
+          <section>
+            <h2>Nature Club Leadership</h2>
+            <p>Outreach Head and Photography Head, organizing weekly photography contests and community participation.</p>
+          </section>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
