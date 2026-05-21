@@ -2,10 +2,9 @@
   QUICK EDIT GUIDE
   1. Change background: replace assets/background.jpg OR edit portfolioConfig.backgroundImage.
   2. Add projects: add objects inside portfolioConfig.projects. Add as many as you want.
-  3. Move projects: drag icons on the desktop. Saved positions stay in this browser.
-  4. Change icons: use emoji: "🧠" OR image: "assets/icons/my-icon.png".
-  5. Change bottom links/icons: edit portfolioConfig.links and portfolioConfig.dockIcons.
-  6. Add GitHub for a project: use github: "https://github.com/yourname/repo-name".
+  3. Change icons: use emoji: "🧠" OR image: "assets/icons/my-icon.png".
+  4. Change bottom links/icons: edit portfolioConfig.links and portfolioConfig.dockIcons.
+  5. Add GitHub for a project: use github: "https://github.com/yourname/repo-name".
 */
 
 const portfolioConfig = {
@@ -13,12 +12,11 @@ const portfolioConfig = {
 
   links: {
     email: "mailto:raghuneshram@gmail.com?subject=Portfolio%20Contact",
-    github: "https://github.com/rsraghu2528",
+    github: "https://github.com/rs-raghu",
     leetcode: "https://leetcode.com/", // replace with your LeetCode profile URL
-    resume: "assets/resume/RS_Raghu_Resume.pdf",
+    resume: "assets/resume/resume.pdf",
   },
 
-  // Change bottom dock icons here. Use emoji OR image path.
   dockIcons: {
     about: { icon: "assets/icons/about.jpeg" },
     notes: { icon: "assets/icons/notes.jpeg" },
@@ -36,169 +34,242 @@ const portfolioConfig = {
     // resume: { emoji: "📄" },
   },
 
-projectLayout: {
-  draggable: false,
-  savePositions: false,
-  showDragHint: false,
-},
-
-projects: [
-  {
-    title: "EchoForge",
-    subtitle: "AI lyric-video automation",
-    category: "AI Automation / Media Engineering",
-    emoji: "🎬",
-    position: { x: 12, y: 10 },
-    description:
-      "A Telegram-controlled automation pipeline that discovers trending songs, downloads audio, fetches lyrics, aligns lyrics to vocals, renders lyric videos, sends previews for review, and publishes approved videos to YouTube.",
-    tags: ["Python", "Telegram Bot API", "Remotion", "React", "Node.js", "Whisper", "Demucs", "ffmpeg"],
-    github: "https://github.com/rs-raghu/EchoForge",
-    links: [],
+  projectLayout: {
+    draggable: false,
+    savePositions: false,
+    showDragHint: false,
   },
 
-  {
-    title: "RFID Lecture Recorder",
-    subtitle: "IoT AI transcription system",
-    category: "IoT / AI Automation / Embedded Systems",
-    emoji: "🎙️",
-    position: { x: 35, y: 16 },
-    description:
-      "An ESP32 RFID-controlled recording system where authorized RFID cards start and stop lecture recording through a Flask server. Recordings are saved, transcribed with Whisper, and summarized with Gemini.",
-    tags: ["ESP32", "Arduino C++", "RFID", "Flask", "Python", "Whisper", "Gemini"],
-    github: "https://github.com/rs-raghu/Lectro-AI",
-    links: [],
-  },
+  projects: [
+    {
+      title: "EchoForge",
+      subtitle: "AI lyric-video automation",
+      category: "AI Automation / Media Engineering",
+      emoji: "🎬",
+      position: { x: 12, y: 10 },
+      description:
+        "A Telegram-controlled automation pipeline that discovers trending songs, downloads audio, fetches lyrics, aligns lyrics to vocals, renders lyric videos, sends previews for review, and publishes approved videos to YouTube.",
+      tags: [
+        "Python",
+        "Telegram Bot API",
+        "Remotion",
+        "React",
+        "Node.js",
+        "Whisper",
+        "Demucs",
+        "ffmpeg",
+      ],
+      github: "https://github.com/rs-raghu/EchoForge",
+      links: [],
+    },
 
-  {
-    title: "Neural Debris Removal",
-    subtitle: "Computer vision baseline",
-    category: "Computer Vision / Kaggle / Model Unlearning",
-    emoji: "🛰️",
-    position: { x: 58, y: 16 },
-    description:
-      "A Detectron2 and RetinaNet notebook baseline for a model-unlearning challenge, including poisoned model loading, empty-label fine-tuning, 16-bit image handling, inference, and submission generation.",
-    tags: ["Python", "Detectron2", "RetinaNet", "OpenCV", "NumPy", "Object Detection"],
-    github: "https://github.com/rsraghu2528/neural-debris-removal",
-    links: [],
-  },
+    {
+      title: "RFID Lecture Recorder",
+      subtitle: "IoT AI transcription system",
+      category: "IoT / AI Automation / Embedded Systems",
+      emoji: "🎙️",
+      position: { x: 35, y: 16 },
+      description:
+        "An ESP32 RFID-controlled recording system where authorized RFID cards start and stop lecture recording through a Flask server. Recordings are saved, transcribed with Whisper, and summarized with Gemini.",
+      tags: [
+        "ESP32",
+        "Arduino C++",
+        "RFID",
+        "Flask",
+        "Python",
+        "Whisper",
+        "Gemini",
+      ],
+      github: "https://github.com/rs-raghu/Lectro-AI",
+      links: [],
+    },
 
-  {
-    title: "Autonomous Tractor",
-    subtitle: "RL-based navigation simulator",
-    category: "Robotics / AI & ML / Reinforcement Learning",
-    emoji: "🚜",
-    position: { x: 81, y: 16 },
-    description:
-      "A 2D autonomous agricultural tractor simulation with Ackermann steering, Pure Pursuit expert control, imitation learning, SAC reinforcement learning, obstacle detection, custom path drawing, and live Pygame visualization.",
-    tags: ["Python", "Pygame", "PyTorch", "Gymnasium", "Stable-Baselines3", "SAC"],
-    github: "https://github.com/rs-raghu/Autonomus-Navigation",
-    links: [],
-  },
+    {
+      title: "Neural Debris Removal",
+      subtitle: "Computer vision baseline",
+      category: "Computer Vision / Kaggle / Model Unlearning",
+      emoji: "🛰️",
+      position: { x: 58, y: 16 },
+      description:
+        "A Detectron2 and RetinaNet notebook baseline for a model-unlearning challenge, including poisoned model loading, empty-label fine-tuning, 16-bit image handling, inference, and submission generation.",
+      tags: [
+        "Python",
+        "Detectron2",
+        "RetinaNet",
+        "OpenCV",
+        "NumPy",
+        "Object Detection",
+      ],
+      github: "https://github.com/rsraghu2528/neural-debris-removal",
+      links: [],
+    },
 
-  {
-    title: "Coconut Layout Optimizer",
-    subtitle: "Plantation planning tool",
-    category: "Web Tools / Agricultural Planning",
-    emoji: "🥥",
-    position: { x: 12, y: 43 },
-    description:
-      "A browser-based canvas tool for planning coconut plantation layouts with map upload, scale calibration, boundary drawing, obstacle marking, layout generation, spacing controls, rotation, and pattern selection.",
-    tags: ["HTML", "CSS", "JavaScript", "Canvas API", "Agriculture"],
-    github: "https://github.com/rs-raghu/coconut-fam",
-    links: [],
-  },
+    {
+      title: "Autonomous Tractor",
+      subtitle: "RL-based navigation simulator",
+      category: "Robotics / AI & ML / Reinforcement Learning",
+      emoji: "🚜",
+      position: { x: 81, y: 16 },
+      description:
+        "A 2D autonomous agricultural tractor simulation with Ackermann steering, Pure Pursuit expert control, imitation learning, SAC reinforcement learning, obstacle detection, custom path drawing, and live Pygame visualization.",
+      tags: [
+        "Python",
+        "Pygame",
+        "PyTorch",
+        "Gymnasium",
+        "Stable-Baselines3",
+        "SAC",
+      ],
+      github: "https://github.com/rs-raghu/Autonomus-Navigation",
+      links: [],
+    },
 
-  {
-    title: "Fitness Planner",
-    subtitle: "Full-stack fitness platform",
-    category: "Full-Stack Development / Web Applications",
-    emoji: "🏋️",
-    position: { x: 35, y: 43 },
-    description:
-      "A full-stack fitness planner with authentication, workout logs, meal logs, goals, exercise pools, food pools, and PostgreSQL-backed user tracking.",
-    tags: ["React", "Node.js", "Express", "PostgreSQL", "Sequelize", "JWT", "bcrypt"],
-    github: "https://github.com/rs-raghu/ramp",
-    links: [],
-  },
+    {
+      title: "Coconut Layout Optimizer",
+      subtitle: "Plantation planning tool",
+      category: "Web Tools / Agricultural Planning",
+      emoji: "🥥",
+      position: { x: 12, y: 43 },
+      description:
+        "A browser-based canvas tool for planning coconut plantation layouts with map upload, scale calibration, boundary drawing, obstacle marking, layout generation, spacing controls, rotation, and pattern selection.",
+      tags: ["HTML", "CSS", "JavaScript", "Canvas API", "Agriculture"],
+      github: "https://github.com/rs-raghu/coconut-fam",
+      links: [],
+    },
 
-  {
-    title: "Disk Scheduling Simulator",
-    subtitle: "OS algorithm visualizer",
-    category: "Systems Coursework / Educational Tools",
-    emoji: "💽",
-    position: { x: 58, y: 43 },
-    description:
-      "An interactive browser simulator for disk scheduling algorithms with animated disk trace visualization, step controls, seek-time statistics, graphs, and PDF export.",
-    tags: ["HTML", "CSS", "JavaScript", "Canvas API", "FCFS", "SSTF", "SCAN"],
-    github: "https://github.com/rs-raghu/OS-Disk-Scheduling-Simulator",
-    links: [],
-  },
+    {
+      title: "Fitness Planner",
+      subtitle: "Full-stack fitness platform",
+      category: "Full-Stack Development / Web Applications",
+      emoji: "🏋️",
+      position: { x: 35, y: 43 },
+      description:
+        "A full-stack fitness planner with authentication, workout logs, meal logs, goals, exercise pools, food pools, and PostgreSQL-backed user tracking.",
+      tags: [
+        "React",
+        "Node.js",
+        "Express",
+        "PostgreSQL",
+        "Sequelize",
+        "JWT",
+        "bcrypt",
+      ],
+      github: "https://github.com/rs-raghu/ramp",
+      links: [],
+    },
 
-  {
-    title: "Aether-AI",
-    subtitle: "AI Figma design generator",
-    category: "AI Tooling / Design Engineering",
-    emoji: "🎨",
-    position: { x: 81, y: 43 },
-    description:
-      "A Gemini-powered Figma plugin prototype that converts natural-language project descriptions into design-system tokens such as colors, typography, and spacing, then creates reusable Figma styles.",
-    tags: ["TypeScript", "JavaScript", "Figma Plugin API", "Gemini API", "Node.js"],
-    github: "https://github.com/rs-raghu/Aether-AI",
-    links: [],
-  },
+    {
+      title: "Disk Scheduling Simulator",
+      subtitle: "OS algorithm visualizer",
+      category: "Systems Coursework / Educational Tools",
+      emoji: "💽",
+      position: { x: 58, y: 43 },
+      description:
+        "An interactive browser simulator for disk scheduling algorithms with animated disk trace visualization, step controls, seek-time statistics, graphs, and PDF export.",
+      tags: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Canvas API",
+        "FCFS",
+        "SSTF",
+        "SCAN",
+      ],
+      github: "https://github.com/rs-raghu/OS-Disk-Scheduling-Simulator",
+      links: [],
+    },
 
-  {
-    title: "GitHub Profile README",
-    subtitle: "Developer identity page",
-    category: "Profile / Portfolio Support",
-    emoji: "👨‍💻",
-    position: { x: 12, y: 70 },
-    description:
-      "A GitHub profile repository for presenting developer identity, public links, technical interests, and project highlights.",
-    tags: ["Markdown", "GitHub", "Profile README", "Developer Branding"],
-    github: "https://github.com/rs-raghu/rs-raghu",
-    links: [],
-  },
+    {
+      title: "Aether-AI",
+      subtitle: "AI Figma design generator",
+      category: "AI Tooling / Design Engineering",
+      emoji: "🎨",
+      position: { x: 81, y: 43 },
+      description:
+        "A Gemini-powered Figma plugin prototype that converts natural-language project descriptions into design-system tokens such as colors, typography, and spacing, then creates reusable Figma styles.",
+      tags: [
+        "TypeScript",
+        "JavaScript",
+        "Figma Plugin API",
+        "Gemini API",
+        "Node.js",
+      ],
+      github: "https://github.com/rs-raghu/Aether-AI",
+      links: [],
+    },
 
-  {
-    title: "BirdCLEF 2026",
-    subtitle: "Bioacoustic ML pipeline",
-    category: "Deep Learning / Audio ML / Kaggle",
-    emoji: "🐦",
-    position: { x: 35, y: 70 },
-    description:
-      "A Kaggle-oriented bird sound classification pipeline for multi-label bioacoustic prediction over soundscape windows, using SED attention pooling, multi-backbone modeling, TTA, calibration, and ensembling.",
-    tags: ["Python", "PyTorch", "Audio ML", "EfficientNetV2", "ConvNeXt", "TTA"],
-    github: "https://github.com/rsraghu2528/birdclef-2026",
-    links: [],
-  },
+    {
+      title: "GitHub Profile README",
+      subtitle: "Developer identity page",
+      category: "Profile / Portfolio Support",
+      emoji: "👨‍💻",
+      position: { x: 12, y: 70 },
+      description:
+        "A GitHub profile repository for presenting developer identity, public links, technical interests, and project highlights.",
+      tags: ["Markdown", "GitHub", "Profile README", "Developer Branding"],
+      github: "https://github.com/rs-raghu/rs-raghu",
+      links: [],
+    },
 
-  {
-    title: "Daily Grind Tracker",
-    subtitle: "Personal OS dashboard",
-    category: "Frontend Engineering / Productivity Tools",
-    emoji: "📊",
-    position: { x: 58, y: 70 },
-    description:
-      "A React and TypeScript personal productivity dashboard for tracking daily execution, study topics, project tasks, fitness routines, hydration, sleep, meditation, streaks, and focused work through a Pomodoro timer.",
-    tags: ["React", "TypeScript", "Vite", "Tailwind", "LocalStorage", "Recharts"],
-    github: "https://github.com/rs-raghu/daily-grind-tracker",
-    links: [],
-  },
+    {
+      title: "BirdCLEF 2026",
+      subtitle: "Bioacoustic ML pipeline",
+      category: "Deep Learning / Audio ML / Kaggle",
+      emoji: "🐦",
+      position: { x: 35, y: 70 },
+      description:
+        "A Kaggle-oriented bird sound classification pipeline for multi-label bioacoustic prediction over soundscape windows, using SED attention pooling, multi-backbone modeling, TTA, calibration, and ensembling.",
+      tags: [
+        "Python",
+        "PyTorch",
+        "Audio ML",
+        "EfficientNetV2",
+        "ConvNeXt",
+        "TTA",
+      ],
+      github: "https://github.com/rsraghu2528/birdclef-2026",
+      links: [],
+    },
 
-  {
-    title: "RaghuOS Portfolio",
-    subtitle: "Interactive glass portfolio",
-    category: "Portfolio / Frontend Development",
-    emoji: "🖥️",
-    position: { x: 81, y: 70 },
-    description:
-      "A desktop-inspired glassmorphism portfolio with draggable project icons, bottom dock shortcuts, project detail panels, background customization, GitHub links, and saved icon positions through localStorage.",
-    tags: ["HTML", "CSS", "JavaScript", "Glassmorphism", "LocalStorage"],
-    github: "https://github.com/rs-raghu/protfolio-1",
-    links: [],
-  },
-],    
+    {
+      title: "Daily Grind Tracker",
+      subtitle: "Personal OS dashboard",
+      category: "Frontend Engineering / Productivity Tools",
+      emoji: "📊",
+      position: { x: 58, y: 70 },
+      description:
+        "A React and TypeScript personal productivity dashboard for tracking daily execution, study topics, project tasks, fitness routines, hydration, sleep, meditation, streaks, and focused work through a Pomodoro timer.",
+      tags: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Tailwind",
+        "LocalStorage",
+        "Recharts",
+      ],
+      github: "https://github.com/rs-raghu/daily-grind-tracker",
+      links: [],
+    },
+
+    {
+      title: "RaghuOS Portfolio",
+      subtitle: "Interactive glass portfolio",
+      category: "Portfolio / Frontend Development",
+      emoji: "🖥️",
+      position: { x: 81, y: 70 },
+      description:
+        "A desktop-inspired glassmorphism portfolio with draggable project icons, bottom dock shortcuts, project detail panels, background customization, GitHub links, and saved icon positions through localStorage.",
+      tags: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Glassmorphism",
+        "LocalStorage",
+      ],
+      github: "https://github.com/rs-raghu/protfolio-1",
+      links: [],
+    },
+  ],
 };
 
 const projectSpace = document.querySelector("[data-project-space]");
@@ -250,10 +321,10 @@ function saveProjectPosition(title, position) {
 
 function getProjectPosition(project, index) {
   const saved = getSavedPositions()[project.title];
-  return saved || project.position || autoPosition(index, portfolioConfig.projects.length);
+  return saved || project.position || autoPosition(index);
 }
 
-function autoPosition(index, total) {
+function autoPosition(index) {
   const angle = index * 137.508;
   const radius = 24 + (index % 4) * 8;
   const x = 50 + Math.cos((angle * Math.PI) / 180) * radius;
@@ -266,6 +337,8 @@ function autoPosition(index, total) {
 }
 
 function renderProjects() {
+  if (!projectSpace) return;
+
   projectSpace.innerHTML = "";
 
   portfolioConfig.projects.forEach((project, index) => {
@@ -396,11 +469,12 @@ function createActionButton(label, url) {
 function openProject(project) {
   closePanels();
 
+  if (!projectPanel) return;
+
   projectTitle.textContent = project.title;
   projectCategory.textContent = project.category || "Project";
   projectDescription.textContent = project.description || "";
 
-  // Subtitle + GitHub link beside it
   projectSubtitle.innerHTML = "";
 
   const subtitleText = document.createElement("span");
@@ -430,12 +504,8 @@ function openProject(project) {
 
   projectActions.innerHTML = "";
 
-  // GitHub is no longer shown below.
-  // Only custom links like Demo, Case Study, Notes, etc. appear here.
   (project.links || []).forEach((link) => {
     if (!link.label || !link.url) return;
-
-    // Prevent duplicate GitHub button below
     if (link.label.toLowerCase() === "github") return;
 
     projectActions.appendChild(createActionButton(link.label, link.url));
@@ -456,7 +526,7 @@ function openPanel(name) {
 }
 
 function applyConfig() {
-  if (portfolioConfig.backgroundImage) {
+  if (portfolioConfig.backgroundImage && background) {
     background.style.backgroundImage = `
       linear-gradient(90deg, rgba(0,0,0,.34), rgba(0,0,0,.08) 48%, rgba(0,0,0,.36)),
       url('${portfolioConfig.backgroundImage}'),
@@ -464,10 +534,15 @@ function applyConfig() {
     `;
   }
 
-  document.querySelector("[data-message-link]").href = portfolioConfig.links.email;
-  document.querySelector("[data-github-link]").href = portfolioConfig.links.github;
-  document.querySelector("[data-leetcode-link]").href = portfolioConfig.links.leetcode;
-  document.querySelector("[data-resume-link]").href = portfolioConfig.links.resume;
+  const messageLink = document.querySelector("[data-message-link]");
+  const githubLink = document.querySelector("[data-github-link]");
+  const leetcodeLink = document.querySelector("[data-leetcode-link]");
+  const resumeLink = document.querySelector("[data-resume-link]");
+
+  if (messageLink) messageLink.href = portfolioConfig.links.email;
+  if (githubLink) githubLink.href = portfolioConfig.links.github;
+  if (leetcodeLink) leetcodeLink.href = portfolioConfig.links.leetcode;
+  if (resumeLink) resumeLink.href = portfolioConfig.links.resume;
 
   document.querySelectorAll("[data-dock-item]").forEach((item) => {
     const key = item.dataset.dockItem;
@@ -480,13 +555,31 @@ function applyConfig() {
   });
 }
 
-document.querySelectorAll("[data-open-panel]").forEach((button) => {
-  button.addEventListener("click", () => openPanel(button.dataset.openPanel));
-});
+function setupPanelButtons() {
+  document.querySelectorAll("[data-open-panel]").forEach((button) => {
+    button.addEventListener("click", () => openPanel(button.dataset.openPanel));
+  });
 
-document.querySelectorAll("[data-close-panel]").forEach((button) => {
-  button.addEventListener("click", closePanels);
-});
+  document.querySelectorAll("[data-close-panel]").forEach((button) => {
+    button.addEventListener("click", closePanels);
+  });
+}
+
+function setupNotesTabs() {
+  document.querySelectorAll("[data-note-tab]").forEach((tab) => {
+    tab.addEventListener("click", () => {
+      const noteName = tab.dataset.noteTab;
+
+      document.querySelectorAll("[data-note-tab]").forEach((item) => {
+        item.classList.toggle("is-active", item.dataset.noteTab === noteName);
+      });
+
+      document.querySelectorAll("[data-note-page]").forEach((page) => {
+        page.classList.toggle("is-active", page.dataset.notePage === noteName);
+      });
+    });
+  });
+}
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") closePanels();
@@ -494,3 +587,5 @@ document.addEventListener("keydown", (event) => {
 
 applyConfig();
 renderProjects();
+setupPanelButtons();
+setupNotesTabs();

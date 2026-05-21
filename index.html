@@ -92,70 +92,156 @@
       </article>
 
       <!-- About panel -->
-      <article class="glass panel text-panel" data-panel="about" aria-label="About me">
-        <button class="panel-close" type="button" data-close-panel aria-label="Close panel">
-          ×
-        </button>
+      <article class="glass panel about-panel" data-panel="about" aria-label="About me">
+  <button class="panel-close" type="button" data-close-panel aria-label="Close panel">
+    ×
+  </button>
 
-        <p class="panel-kicker">About me</p>
+  <div class="about-card">
+    <div class="about-top">
+      <img
+        class="about-photo"
+        src="assets/profile.jpeg"
+        alt="R Raghunesh profile photo"
+      />
 
-        <h1>R Raghunesh</h1>
+      <div class="about-details">
+        <div class="about-row">
+          <span>NAME</span>
+          <strong>R Raghunesh</strong>
+        </div>
 
-        <p>
-          I am a student developer focused on full-stack web development, machine learning,
-          DSA, and practical product-building. I like building useful tools that improve
-          focus, learning, and real-world decision-making.
-        </p>
+        <div class="about-row">
+          <span>POSITION</span>
+          <strong>AI Developer</strong>
+        </div>
 
-        <div class="info-grid">
-          <span>Focus</span>
-          <strong>Web • ML • DSA • Product Projects</strong>
-
-          <span>Email</span>
+        <div class="about-row">
+          <span>MAIL</span>
           <strong>
             <a href="mailto:raghuneshram@gmail.com">raghuneshram@gmail.com</a>
           </strong>
-
-          <span>Style</span>
-          <strong>Hands-on learning through projects</strong>
         </div>
-      </article>
+      </div>
+    </div>
+
+    <div class="about-bio">
+      <p>
+        I'm R Raghunesh, an AI developer and student builder focused on creating
+        practical projects across artificial intelligence, automation, full-stack
+        development, and product-focused tools.
+      </p>
+
+      <p>
+        I build systems that combine creativity with AI — from automation pipelines
+        and machine learning simulations to productivity dashboards, IoT recording
+        systems, and interactive web experiences.
+      </p>
+
+      <p>
+        My current focus is strengthening my skills in machine learning, full-stack
+        engineering, DSA, and building portfolio-level projects that solve real-world
+        problems.
+      </p>
+    </div>
+  </div>
+</article>
 
       <!-- Notes / experience panel -->
-      <article class="glass panel text-panel" data-panel="notes" aria-label="Notes and experience">
-        <button class="panel-close" type="button" data-close-panel aria-label="Close panel">
-          ×
-        </button>
+      <article class="glass panel notes-panel" data-panel="notes" aria-label="Notes and experience">
+  <button class="panel-close" type="button" data-close-panel aria-label="Close panel">
+    ×
+  </button>
 
-        <p class="panel-kicker">Notes / Experience / About</p>
+  <div class="notes-layout">
+    <aside class="notes-sidebar" aria-label="Notes navigation">
+      <button class="notes-tab is-active" type="button" data-note-tab="experience">
+        <strong>Experience</strong>
+        <span>Leadership, projects, and technical work</span>
+      </button>
 
-        <h1>What I am building</h1>
+      <button class="notes-tab" type="button" data-note-tab="about">
+        <strong>About</strong>
+        <span>Who I am and what I’m building</span>
+      </button>
+    </aside>
 
-        <div class="notes-list">
-          <section>
-            <h2>Focus Management System</h2>
-            <p>
-              A cross-device distraction blocking system concept with AI-based access reasoning.
-            </p>
-          </section>
+    <section class="notes-content">
+      <article class="note-page is-active" data-note-page="experience">
+        <h1>Experience</h1>
 
-          <section>
-            <h2>Machine Learning Practice</h2>
-            <p>
-              Learning ML by building projects first, including image classification and
-              preprocessing workflows.
-            </p>
-          </section>
+        <p>
+          AI Developer and student builder focused on creating practical systems
+          across artificial intelligence, automation, full-stack development, IoT,
+          and productivity tools.
+        </p>
 
-          <section>
-            <h2>Nature Club Leadership</h2>
-            <p>
-              Outreach Head and Photography Head, organizing weekly photography contests and
-              community participation.
-            </p>
-          </section>
-        </div>
+        <h2>AI Automation and Media Engineering</h2>
+        <ul>
+          <li>Built EchoForge, an AI lyric-video automation pipeline controlled through Telegram.</li>
+          <li>Worked with audio processing, lyric alignment, preview approval, and YouTube publishing flows.</li>
+          <li>Used tools such as Python, Whisper, Demucs, ffmpeg, Remotion, React, and Node.js.</li>
+        </ul>
+
+        <h2>Robotics and Simulation</h2>
+        <ul>
+          <li>Developed an autonomous tractor simulation for agricultural path navigation.</li>
+          <li>Explored Ackermann steering, Pure Pursuit control, imitation learning, and SAC reinforcement learning.</li>
+          <li>Built live simulation and visualization workflows using Python, Pygame, PyTorch, and Gymnasium.</li>
+        </ul>
+
+        <h2>Full-Stack and Productivity Tools</h2>
+        <ul>
+          <li>Built Daily Grind Tracker, a personal productivity dashboard for study, fitness, hydration, sleep, and focus tracking.</li>
+          <li>Created a full-stack fitness planner with authentication, workout logs, meal logs, goals, and PostgreSQL-backed tracking.</li>
+          <li>Designed RaghuOS Portfolio, an interactive glassmorphism portfolio with project apps, dock shortcuts, and detail panels.</li>
+        </ul>
+
+        <h2>IoT and AI Systems</h2>
+        <ul>
+          <li>Built an RFID Lecture Recorder system using ESP32, Flask, Whisper, and Gemini.</li>
+          <li>Created a workflow where authorized RFID cards start and stop lecture recording.</li>
+          <li>Integrated transcription and AI summarization for recorded sessions.</li>
+        </ul>
+
+        <h2>Leadership and Community</h2>
+        <ul>
+          <li>Served as Outreach Head and Photography Head for the nature club.</li>
+          <li>Organized weekly photography contests with themes, submissions, rules, shoutouts, and winner tracking.</li>
+          <li>Built communication, coordination, and community engagement experience through club responsibilities.</li>
+        </ul>
       </article>
+
+      <article class="note-page" data-note-page="about">
+        <h1>About</h1>
+
+        <p>
+          I’m R Raghunesh, an AI developer and student builder focused on creating
+          useful projects that combine artificial intelligence, automation, web
+          development, and product thinking.
+        </p>
+
+        <p>
+          I like building systems that solve practical problems. My projects include
+          AI automation pipelines, machine learning simulations, productivity dashboards,
+          IoT recording systems, full-stack platforms, and interactive portfolio experiences.
+        </p>
+
+        <p>
+          My current focus is improving in machine learning, full-stack development,
+          DSA, and real-world project building. I prefer learning by building first,
+          then strengthening the theory behind what I build.
+        </p>
+
+        <p>
+          I am especially interested in AI tools, developer productivity, automation,
+          computer vision, web applications, and products that help people focus,
+          learn, and work better.
+        </p>
+      </article>
+    </section>
+  </div>
+</article>
     </section>
   </main>
 </body>
