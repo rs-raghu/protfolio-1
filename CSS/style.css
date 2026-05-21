@@ -576,35 +576,39 @@ button {
   }
 
   .identity-widget {
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    z-index: 30;
-    min-width: 11rem;
-    padding: 0.82rem 0.95rem;
-    border-radius: 20px;
-  }
+  position: relative;
+  top: auto;
+  left: auto;
+  z-index: 30;
+  width: fit-content;
+  min-width: 11rem;
+  margin: 1rem 0 0 1rem;
+  padding: 0.82rem 0.95rem;
+  border-radius: 20px;
+}
 
   .project-space {
-    position: relative !important;
-    inset: auto !important;
-    top: auto !important;
-    left: auto !important;
+  position: relative !important;
+  inset: auto !important;
+  top: auto !important;
+  left: auto !important;
 
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    grid-auto-rows: auto;
-    gap: 1.75rem 0.75rem;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  grid-auto-rows: auto;
+  gap: 1.75rem 0.75rem;
 
-    width: 100%;
-    height: auto;
-    min-height: 100svh;
-    padding: 7.5rem 0.75rem 8rem;
+  width: 100%;
+  height: auto;
+  min-height: auto;
 
-    align-items: start;
-    justify-items: center;
-    z-index: 5;
-  }
+  /* extra bottom padding so dock doesn't cover last row */
+  padding: 2.2rem 0.75rem 11.5rem;
+
+  align-items: start;
+  justify-items: center;
+  z-index: 5;
+}
 
   .project-app {
     position: static !important;
