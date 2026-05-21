@@ -36,81 +36,169 @@ const portfolioConfig = {
     // resume: { emoji: "📄" },
   },
 
-  projectLayout: {
-    draggable: true,
-    savePositions: true,
-    showDragHint: true,
+projectLayout: {
+  draggable: false,
+  savePositions: false,
+  showDragHint: false,
+},
+
+projects: [
+  {
+    title: "EchoForge",
+    subtitle: "AI lyric-video automation",
+    category: "AI Automation / Media Engineering",
+    emoji: "🎬",
+    position: { x: 12, y: 10 },
+    description:
+      "A Telegram-controlled automation pipeline that discovers trending songs, downloads audio, fetches lyrics, aligns lyrics to vocals, renders lyric videos, sends previews for review, and publishes approved videos to YouTube.",
+    tags: ["Python", "Telegram Bot API", "Remotion", "React", "Node.js", "Whisper", "Demucs", "ffmpeg"],
+    github: "https://github.com/rsraghu2528/echoforge-v3",
+    links: [],
   },
 
-  projects: [
-    {
-      title: "Focus Management",
-      subtitle: "AI productivity system",
-      category: "Productivity / AI / Cross-platform",
-      emoji: "🧠",
-      // icon: "assets/icons/focus.png",
-      position: { x: 22, y: 25 },
-      description:
-        "A cross-device focus system concept that connects browser, desktop, and mobile blockers. Users give a reason before accessing distractions, and AI can grant limited access based on that reason.",
-      tags: ["React", "MERN", "Extension APIs", "AI", "Productivity"],
-      github: "https://github.com/rsraghu2528/focus-management",
-      links: [
-        { label: "Case Study", url: "#" },
-      ],
-    },
-    {
-      title: "Fruit CNN",
-      subtitle: "Computer vision classifier",
-      category: "Machine Learning",
-      emoji: "🍎",
-      position: { x: 68, y: 22 },
-      description:
-        "A CNN-based fruit classification project that identifies fruit categories from images using preprocessing, training, evaluation, and prediction workflows.",
-      tags: ["Python", "TensorFlow", "Keras", "CNN", "Image Classification"],
-      github: "https://github.com/rsraghu2528/fruit-cnn",
-      links: [],
-    },
-    {
-      title: "Roadmap Maker",
-      subtitle: "Visual learning planner",
-      category: "Web App",
-      emoji: "🗺️",
-      position: { x: 43, y: 47 },
-      description:
-        "A visual tool for creating roadmaps, flowcharts, and structured learning plans using draggable nodes and reusable templates.",
-      tags: ["React", "React Flow", "Tailwind", "Node.js"],
-      github: "https://github.com/rsraghu2528/roadmap-maker",
-      links: [],
-    },
-    {
-      title: "Dehydration Prototype",
-      subtitle: "Sensor-based health idea",
-      category: "Hardware Prototype",
-      emoji: "💧",
-      position: { x: 76, y: 56 },
-      description:
-        "A prototype idea that estimates dehydration using a moisture sensor placed on the hand to analyze sweat-related signals.",
-      tags: ["ESP32", "Arduino", "Sensors", "Dashboard"],
-      github: "https://github.com/rsraghu2528/dehydration-prototype",
-      links: [
-        { label: "Notes", url: "#" },
-      ],
-    },
-    {
-      title: "Photography Contest",
-      subtitle: "Nature club system",
-      category: "Community / Automation",
-      emoji: "📷",
-      position: { x: 25, y: 63 },
-      description:
-        "A weekly nature club photography contest workflow with themes, submissions, rules, metadata checks, shoutouts, and leaderboard ideas.",
-      tags: ["React", "Firebase", "Google Drive", "Community"],
-      github: "https://github.com/rsraghu2528/photography-contest",
-      links: [
-        { label: "View Idea", url: "#" },
-      ],
-    },
-  ],
+  {
+    title: "RFID Lecture Recorder",
+    subtitle: "IoT AI transcription system",
+    category: "IoT / AI Automation / Embedded Systems",
+    emoji: "🎙️",
+    position: { x: 35, y: 16 },
+    description:
+      "An ESP32 RFID-controlled recording system where authorized RFID cards start and stop lecture recording through a Flask server. Recordings are saved, transcribed with Whisper, and summarized with Gemini.",
+    tags: ["ESP32", "Arduino C++", "RFID", "Flask", "Python", "Whisper", "Gemini"],
+    github: "https://github.com/rsraghu2528/rfid-lecture-recorder",
+    links: [],
+  },
+
+  {
+    title: "Neural Debris Removal",
+    subtitle: "Computer vision baseline",
+    category: "Computer Vision / Kaggle / Model Unlearning",
+    emoji: "🛰️",
+    position: { x: 58, y: 16 },
+    description:
+      "A Detectron2 and RetinaNet notebook baseline for a model-unlearning challenge, including poisoned model loading, empty-label fine-tuning, 16-bit image handling, inference, and submission generation.",
+    tags: ["Python", "Detectron2", "RetinaNet", "OpenCV", "NumPy", "Object Detection"],
+    github: "https://github.com/rsraghu2528/neural-debris-removal",
+    links: [],
+  },
+
+  {
+    title: "Autonomous Tractor",
+    subtitle: "RL-based navigation simulator",
+    category: "Robotics / AI & ML / Reinforcement Learning",
+    emoji: "🚜",
+    position: { x: 81, y: 16 },
+    description:
+      "A 2D autonomous agricultural tractor simulation with Ackermann steering, Pure Pursuit expert control, imitation learning, SAC reinforcement learning, obstacle detection, custom path drawing, and live Pygame visualization.",
+    tags: ["Python", "Pygame", "PyTorch", "Gymnasium", "Stable-Baselines3", "SAC"],
+    github: "https://github.com/rsraghu2528/autonomous-tractor-simulation",
+    links: [],
+  },
+
+  {
+    title: "Coconut Layout Optimizer",
+    subtitle: "Plantation planning tool",
+    category: "Web Tools / Agricultural Planning",
+    emoji: "🥥",
+    position: { x: 12, y: 43 },
+    description:
+      "A browser-based canvas tool for planning coconut plantation layouts with map upload, scale calibration, boundary drawing, obstacle marking, layout generation, spacing controls, rotation, and pattern selection.",
+    tags: ["HTML", "CSS", "JavaScript", "Canvas API", "Agriculture"],
+    github: "https://github.com/rsraghu2528/coconut-layout-optimizer",
+    links: [],
+  },
+
+  {
+    title: "Fitness Planner",
+    subtitle: "Full-stack fitness platform",
+    category: "Full-Stack Development / Web Applications",
+    emoji: "🏋️",
+    position: { x: 35, y: 43 },
+    description:
+      "A full-stack fitness planner with authentication, workout logs, meal logs, goals, exercise pools, food pools, and PostgreSQL-backed user tracking.",
+    tags: ["React", "Node.js", "Express", "PostgreSQL", "Sequelize", "JWT", "bcrypt"],
+    github: "https://github.com/rsraghu2528/personal-fitness-planner",
+    links: [],
+  },
+
+  {
+    title: "Disk Scheduling Simulator",
+    subtitle: "OS algorithm visualizer",
+    category: "Systems Coursework / Educational Tools",
+    emoji: "💽",
+    position: { x: 58, y: 43 },
+    description:
+      "An interactive browser simulator for disk scheduling algorithms with animated disk trace visualization, step controls, seek-time statistics, graphs, and PDF export.",
+    tags: ["HTML", "CSS", "JavaScript", "Canvas API", "FCFS", "SSTF", "SCAN"],
+    github: "https://github.com/rsraghu2528/os-disk-scheduling-simulator",
+    links: [],
+  },
+
+  {
+    title: "Aether-AI",
+    subtitle: "AI Figma design generator",
+    category: "AI Tooling / Design Engineering",
+    emoji: "🎨",
+    position: { x: 81, y: 43 },
+    description:
+      "A Gemini-powered Figma plugin prototype that converts natural-language project descriptions into design-system tokens such as colors, typography, and spacing, then creates reusable Figma styles.",
+    tags: ["TypeScript", "JavaScript", "Figma Plugin API", "Gemini API", "Node.js"],
+    github: "https://github.com/rsraghu2528/aether-ai",
+    links: [],
+  },
+
+  {
+    title: "GitHub Profile README",
+    subtitle: "Developer identity page",
+    category: "Profile / Portfolio Support",
+    emoji: "👨‍💻",
+    position: { x: 12, y: 70 },
+    description:
+      "A GitHub profile repository for presenting developer identity, public links, technical interests, and project highlights.",
+    tags: ["Markdown", "GitHub", "Profile README", "Developer Branding"],
+    github: "https://github.com/rsraghu2528/rs-raghu",
+    links: [],
+  },
+
+  {
+    title: "BirdCLEF 2026",
+    subtitle: "Bioacoustic ML pipeline",
+    category: "Deep Learning / Audio ML / Kaggle",
+    emoji: "🐦",
+    position: { x: 35, y: 70 },
+    description:
+      "A Kaggle-oriented bird sound classification pipeline for multi-label bioacoustic prediction over soundscape windows, using SED attention pooling, multi-backbone modeling, TTA, calibration, and ensembling.",
+    tags: ["Python", "PyTorch", "Audio ML", "EfficientNetV2", "ConvNeXt", "TTA"],
+    github: "https://github.com/rsraghu2528/birdclef-2026",
+    links: [],
+  },
+
+  {
+    title: "Daily Grind Tracker",
+    subtitle: "Personal OS dashboard",
+    category: "Frontend Engineering / Productivity Tools",
+    emoji: "📊",
+    position: { x: 58, y: 70 },
+    description:
+      "A React and TypeScript personal productivity dashboard for tracking daily execution, study topics, project tasks, fitness routines, hydration, sleep, meditation, streaks, and focused work through a Pomodoro timer.",
+    tags: ["React", "TypeScript", "Vite", "Tailwind", "LocalStorage", "Recharts"],
+    github: "https://github.com/rsraghu2528/daily-grind-tracker",
+    links: [],
+  },
+
+  {
+    title: "RaghuOS Portfolio",
+    subtitle: "Interactive glass portfolio",
+    category: "Portfolio / Frontend Development",
+    emoji: "🖥️",
+    position: { x: 81, y: 70 },
+    description:
+      "A desktop-inspired glassmorphism portfolio with draggable project icons, bottom dock shortcuts, project detail panels, background customization, GitHub links, and saved icon positions through localStorage.",
+    tags: ["HTML", "CSS", "JavaScript", "Glassmorphism", "LocalStorage"],
+    github: "https://github.com/rsraghu2528/raghuos-glass-portfolio",
+    links: [],
+  },
+],
 };
 
 const projectSpace = document.querySelector("[data-project-space]");
