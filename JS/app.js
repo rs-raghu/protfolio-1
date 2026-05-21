@@ -52,7 +52,7 @@ projects: [
     description:
       "A Telegram-controlled automation pipeline that discovers trending songs, downloads audio, fetches lyrics, aligns lyrics to vocals, renders lyric videos, sends previews for review, and publishes approved videos to YouTube.",
     tags: ["Python", "Telegram Bot API", "Remotion", "React", "Node.js", "Whisper", "Demucs", "ffmpeg"],
-    github: "https://github.com/rsraghu2528/echoforge-v3",
+    github: "https://github.com/rs-raghu/EchoForge",
     links: [],
   },
 
@@ -65,7 +65,7 @@ projects: [
     description:
       "An ESP32 RFID-controlled recording system where authorized RFID cards start and stop lecture recording through a Flask server. Recordings are saved, transcribed with Whisper, and summarized with Gemini.",
     tags: ["ESP32", "Arduino C++", "RFID", "Flask", "Python", "Whisper", "Gemini"],
-    github: "https://github.com/rsraghu2528/rfid-lecture-recorder",
+    github: "https://github.com/rs-raghu/Lectro-AI",
     links: [],
   },
 
@@ -91,7 +91,7 @@ projects: [
     description:
       "A 2D autonomous agricultural tractor simulation with Ackermann steering, Pure Pursuit expert control, imitation learning, SAC reinforcement learning, obstacle detection, custom path drawing, and live Pygame visualization.",
     tags: ["Python", "Pygame", "PyTorch", "Gymnasium", "Stable-Baselines3", "SAC"],
-    github: "https://github.com/rsraghu2528/autonomous-tractor-simulation",
+    github: "https://github.com/rs-raghu/Autonomus-Navigation",
     links: [],
   },
 
@@ -104,7 +104,7 @@ projects: [
     description:
       "A browser-based canvas tool for planning coconut plantation layouts with map upload, scale calibration, boundary drawing, obstacle marking, layout generation, spacing controls, rotation, and pattern selection.",
     tags: ["HTML", "CSS", "JavaScript", "Canvas API", "Agriculture"],
-    github: "https://github.com/rsraghu2528/coconut-layout-optimizer",
+    github: "https://github.com/rs-raghu/coconut-fam",
     links: [],
   },
 
@@ -117,7 +117,7 @@ projects: [
     description:
       "A full-stack fitness planner with authentication, workout logs, meal logs, goals, exercise pools, food pools, and PostgreSQL-backed user tracking.",
     tags: ["React", "Node.js", "Express", "PostgreSQL", "Sequelize", "JWT", "bcrypt"],
-    github: "https://github.com/rsraghu2528/personal-fitness-planner",
+    github: "https://github.com/rs-raghu/ramp",
     links: [],
   },
 
@@ -130,7 +130,7 @@ projects: [
     description:
       "An interactive browser simulator for disk scheduling algorithms with animated disk trace visualization, step controls, seek-time statistics, graphs, and PDF export.",
     tags: ["HTML", "CSS", "JavaScript", "Canvas API", "FCFS", "SSTF", "SCAN"],
-    github: "https://github.com/rsraghu2528/os-disk-scheduling-simulator",
+    github: "https://github.com/rs-raghu/OS-Disk-Scheduling-Simulator",
     links: [],
   },
 
@@ -143,7 +143,7 @@ projects: [
     description:
       "A Gemini-powered Figma plugin prototype that converts natural-language project descriptions into design-system tokens such as colors, typography, and spacing, then creates reusable Figma styles.",
     tags: ["TypeScript", "JavaScript", "Figma Plugin API", "Gemini API", "Node.js"],
-    github: "https://github.com/rsraghu2528/aether-ai",
+    github: "https://github.com/rs-raghu/Aether-AI",
     links: [],
   },
 
@@ -156,7 +156,7 @@ projects: [
     description:
       "A GitHub profile repository for presenting developer identity, public links, technical interests, and project highlights.",
     tags: ["Markdown", "GitHub", "Profile README", "Developer Branding"],
-    github: "https://github.com/rsraghu2528/rs-raghu",
+    github: "https://github.com/rs-raghu/rs-raghu",
     links: [],
   },
 
@@ -182,7 +182,7 @@ projects: [
     description:
       "A React and TypeScript personal productivity dashboard for tracking daily execution, study topics, project tasks, fitness routines, hydration, sleep, meditation, streaks, and focused work through a Pomodoro timer.",
     tags: ["React", "TypeScript", "Vite", "Tailwind", "LocalStorage", "Recharts"],
-    github: "https://github.com/rsraghu2528/daily-grind-tracker",
+    github: "https://github.com/rs-raghu/daily-grind-tracker",
     links: [],
   },
 
@@ -195,10 +195,10 @@ projects: [
     description:
       "A desktop-inspired glassmorphism portfolio with draggable project icons, bottom dock shortcuts, project detail panels, background customization, GitHub links, and saved icon positions through localStorage.",
     tags: ["HTML", "CSS", "JavaScript", "Glassmorphism", "LocalStorage"],
-    github: "https://github.com/rsraghu2528/raghuos-glass-portfolio",
+    github: "https://github.com/rs-raghu/protfolio-1",
     links: [],
   },
-],
+],    
 };
 
 const projectSpace = document.querySelector("[data-project-space]");
