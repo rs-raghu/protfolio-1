@@ -298,7 +298,6 @@ button {
   object-fit: cover;
 }
 
-
 .panel-layer {
   position: absolute;
   inset: 0;
@@ -340,15 +339,23 @@ button {
   position: sticky;
   top: 0;
   float: right;
-  display: grid;
+  display: inline-flex;
   width: 2.2rem;
   height: 2.2rem;
-  place-items: center;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.16);
   color: var(--text);
-  font-size: 1.45rem;
+  font-size: 1.35rem;
+  font-weight: 500;
   line-height: 1;
+}
+
+.panel-close:hover,
+.panel-close:focus-visible {
+  background: rgba(255, 255, 255, 0.24);
 }
 
 .panel-kicker {
@@ -567,4 +574,44 @@ button {
     scroll-behavior: auto !important;
     transition-duration: 0.01ms !important;
   }
+}
+
+[data-project-subtitle] {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 0.35rem 0 0;
+}
+
+.project-subtitle-link {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(96, 165, 250, 0.5);
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.16);
+  box-shadow:
+    0 0 18px rgba(59, 130, 246, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.18);
+  padding: 0.32rem 0.62rem;
+  color: #93c5fd;
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.project-subtitle-link:hover,
+.project-subtitle-link:focus-visible {
+  border-color: rgba(147, 197, 253, 0.8);
+  background: rgba(59, 130, 246, 0.26);
+  color: #dbeafe;
+  box-shadow:
+    0 0 24px rgba(59, 130, 246, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22);
+}
+
+.project-subtitle-link:hover,
+.project-subtitle-link:focus-visible {
+  background: rgba(255,255,255,0.2);
 }

@@ -7,7 +7,7 @@ Files:
 - JS/app.js
 - assets/background.jpg
 - assets/icons/
-- assets/resume/RS_Raghu_Resume.pdf
+- assets/resume/resume.pdf
 
 Main edits happen in JS/app.js.
 
@@ -63,3 +63,9 @@ To edit it, change the text inside index.html in the identity-widget section.
 v3 changes:
 - Project drag hint now appears only on hover/focus/drag, without moving the project label position.
 - Bottom dock icons now use project-app style glass square icons, scaled smaller for the dock.
+
+
+v4 changes:
+- Every project now has a GitHub action in the project detail panel.
+- If a project does not define a GitHub button manually, JS/app.js automatically adds one using the project.github value.
+- The panel close "×" button is visually centered inside the circle.
