@@ -19,12 +19,18 @@ const portfolioConfig = {
 
   // Change bottom dock icons here. Use emoji OR image path.
   dockIcons: {
-    about: { emoji: "👤" },
-    notes: { emoji: "📝" },
-    message: { emoji: "✉️" },
-    github: { emoji: "GH" },
-    leetcode: { emoji: "LC" },
-    resume: { emoji: "📄" },
+    // about: { emoji: "👤" },
+    // notes: { emoji: "📝" },
+    // message: { emoji: "✉️" },
+    // github: { emoji: "GH" },
+    // leetcode: { emoji: "LC" },
+    // resume: { emoji: "📄" },
+    about: { icon: "assets/icons/about.jpeg" },
+    notes: { icon: "assets/icons/notes.jpeg" },
+    message: { icon: "assets/icons/message.jpeg" },
+    github: { icon: "assets/icons/github.jpeg" },
+    leetcode: { icon: "assets/icons/leetcode.jpeg" },
+    resume: { icon: "assets/icons/resume.jpeg" },
     // Example image icon:
     // github: { icon: "assets/icons/github.png" },
   },
