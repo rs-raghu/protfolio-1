@@ -136,7 +136,7 @@ button {
 .project-space {
   position: absolute;
   top: 9rem;
-  left: 20rem;
+  left: 15rem;
   z-index: 5;
   display: grid;
   grid-template-columns: repeat(4, 7.8rem);
