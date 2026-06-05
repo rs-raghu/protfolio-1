@@ -855,8 +855,8 @@ button {
     left: auto !important;
     display: grid !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    grid-auto-rows: auto;
-    gap: 1.75rem 0.75rem;
+    grid-auto-rows: 8rem;
+    gap: 1rem 2.2rem;
     width: 100%;
     height: auto;
     min-height: auto;
