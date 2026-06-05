@@ -135,7 +135,7 @@ button {
 /* Desktop project grid */
 .project-space {
   position: absolute;
-  top: 9rem;
+  top: 7rem;
   left: 15rem;
   z-index: 5;
   display: grid;
